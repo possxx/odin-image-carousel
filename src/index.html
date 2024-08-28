@@ -3,7 +3,58 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Odin-Image-Carousel</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="image-carousel-container">
+			<div class="image-carousel">
+				<div class="image-carousel-arrow arrow-back">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 -960 960 960"
+					>
+						<path
+							d="M400-80 0-480l400-400 61 61.67L122.67-480 461-141.67 400-80Z"
+						/>
+					</svg>
+				</div>
+				<div class="image-carousel-frame-container">
+					<div class="image-carousel-frame">
+						<div class="image-carousel-slides">
+							<div class="image-carousel-slide slide-1">
+								<img
+									src="./images/sun-wukong.jpeg"
+									alt="Sun Wukong"
+								/>
+							</div>
+							<div class="image-carousel-slide slide-2">
+								<img
+									src="./images/tan-sanzang.jpeg"
+									alt="Tan Sanzang"
+								/>
+							</div>
+							<div class="image-carousel-slide slide-3">3</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-carousel-arrow arrow-forward">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 -960 960 960"
+					>
+						<path
+							d="m309.67-81.33-61-61.67L587-481.33 248.67-819.67l61-61.66 400 400-400 400Z"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="image-carousel-navigation">
+				<div class="navigation-dot slide-1 active"></div>
+				<div class="navigation-dot slide-2"></div>
+				<div class="navigation-dot slide-3"></div>
+				<div class="navigation-dot slide-4"></div>
+				<div class="navigation-dot slide-5"></div>
+			</div>
+		</div>
+	</body>
 </html>
