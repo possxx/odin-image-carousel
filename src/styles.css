@@ -1,1 +1,95 @@
 @import '../node_modules/possxx-reset/possxx-reset.css';
+
+@font-face {
+	font-family: 'open-sans';
+	src: url('./fonts/opensans-variablefont.woff2') format('woff2-variations');
+	font-weight: 300 800;
+	font-stretch: 75% 100%;
+}
+
+:root {
+	--slate-50: #f8fafc;
+	--slate-100: #f1f5f9;
+	--slate-200: #e2e8f0;
+	--slate-300: #cbd5e1;
+	--slate-400: #94a3b8;
+	--slate-500: #64748b;
+	--slate-600: #475569;
+	--slate-700: #334155;
+	--slate-800: #1e293b;
+	--slate-900: #0f172a;
+	--slate-950: #020617;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--slate-950);
+	color: var(--slate-50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-carousel {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.image-carousel-arrow {
+	fill: var(--slate-50);
+	width: 40px;
+	cursor: pointer;
+}
+
+.image-carousel-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.image-carousel-frame-container {
+	width: 800px;
+}
+
+.image-carousel-frame {
+	aspect-ratio: 16/9;
+	background-color: var(--slate-600);
+	position: relative;
+	overflow: hidden;
+}
+
+.image-carousel-slides {
+	width: 500vw;
+	height: 100%;
+	position: absolute;
+	background-color: red;
+	display: flex;
+}
+
+.image-carousel-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	width: 800px;
+	height: 100%;
+}
+
+.image-carousel-navigation {
+	display: flex;
+	gap: 8px;
+}
+
+.navigation-dot {
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--slate-50);
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.active {
+	background-color: var(--slate-50);
+}
